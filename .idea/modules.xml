@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/human-counter-supervision.iml" filepath="$PROJECT_DIR$/human-counter-supervision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ricml-portfolio.iml" filepath="$PROJECT_DIR$/ricml-portfolio.iml" />
     </modules>
   </component>
 </project>
