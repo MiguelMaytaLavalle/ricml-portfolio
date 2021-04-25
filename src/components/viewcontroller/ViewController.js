@@ -16,7 +16,7 @@ class ViewController extends Component{
                 </div>
                 <div className="intro-area">
                     <section className="intro-text">
-                        <h1>Computer Engineering Student</h1>
+                        <h1>Projects</h1>
                     </section>
                 </div>
                 <section>
