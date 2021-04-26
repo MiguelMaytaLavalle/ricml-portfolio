@@ -1,0 +1,21 @@
+
+.carousel{
+        height: auto;
+        margin: auto;
+}
+
+.carousel-inner img{
+    margin: auto;
+    height: 500px;
+    width: 1000px;
+    filter: brightness(75%);
+}
+
+.carousel-inner img:hover{
+    transition: 0.3s;
+    filter: brightness(100%);
+}
+
+.carousel-inner .carousel-item .d-block{
+
+}

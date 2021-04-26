@@ -9,21 +9,11 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit; line-height: 0em}
 .content{width: auto;margin: 0 auto}*/
 a{
     transition: 0.3s;
-    color: white;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 200;
-    line-height: 70px;
-    text-transform: uppercase;
     z-index:3;
 }
 .site-header{
-    /*background: #282c34;
-    position: fixed;
-    width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    overflow: hidden;*/
     background: black;
     -webkit-align-items: center;
     align-items: center;
@@ -54,7 +44,7 @@ Social Area
 .top-header-area .social-area{
     float:left;
     width:auto;
-    padding-left: 10%;
+    padding-left: 11%;
 }
 .top-header-area .social-area ul{
     margin:0;
@@ -65,12 +55,13 @@ Social Area
     margin-right: 20px;
 }
 .top-header-area .social-area ul li a{
+    color: white;
     background: transparent;
-    width:70px;
-    height:57px;
+    width:65px;
+    height:65px;
     display: block;
     text-align: center;
-    padding-top:10px;
+    padding-top:9px;
     border-radius: 50%
 }
 .top-header-area .social-area ul li a:hover{
@@ -88,14 +79,12 @@ Logo Area
 }
 
 .top-header-area .logo-area .logo-image{
-    position: center;
-    height: 60px;
+    height: 70px;
     text-align: center;
 }
 
 .top-header-area .logo-area .logo-image:hover{
-    background: #282c34;
-    transition: 0.5s;
+
 }
 
 /*
@@ -105,15 +94,17 @@ About Area
     float: right;
     width: auto;
     padding-right: 20%;
+    padding-top: 10px;
 }
 
 .top-header-area .about-area a{
+    color: white;
     background: transparent;
     text-decoration: none;
     font-size: 30px;
     font-weight: bolder;
     border-radius: 0 30px 0 30px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .top-header-area .about-area a:hover{
