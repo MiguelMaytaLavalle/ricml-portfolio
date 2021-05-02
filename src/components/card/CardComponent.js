@@ -27,6 +27,7 @@ class CardComponent extends Component {
                         </div>
                     </div>
 
+
                     <div className="col-xs-12 col-sm-4">
                         <div className="card">
                             <a className="card-image" href="">
@@ -34,7 +35,7 @@ class CardComponent extends Component {
                             </a>
                             <div className="card-content" href="">
                                 <h4 className="card-title">
-                                    <a href="">Social Community Project</a>
+                                    <a href="">Social Media Platform</a>
                                 </h4>
                                 <p>
                                     Made in Android Studio with Java

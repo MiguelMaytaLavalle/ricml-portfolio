@@ -10,9 +10,8 @@ Video Overlay
 .video-overlay{
     object-fit: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
-    top: 0;
     left: 0;
     z-index: -1;
 }
@@ -43,4 +42,9 @@ Video Overlay
     line-height: 1.0em;
     margin: auto;
     padding: 5%;
+}
+
+.page{
+    min-height: 100vh;
+    z-index: -1;
 }
