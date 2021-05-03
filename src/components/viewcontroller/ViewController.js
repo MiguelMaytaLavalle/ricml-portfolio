@@ -7,6 +7,7 @@ import styled, {keyframes} from 'styled-components';
 import {fadeInLeft, fadeInDown, fadeIn} from 'react-animations';
 import CardComponent from "../card/CardComponent";
 import ScrollAnimation from 'react-animate-on-scroll'
+import CarouselProjectsComponent from "../carousel/CarouselProjectsComponent";
 const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
 const fadeInDownAnimation = keyframes`${fadeInDown}`;
 
@@ -26,7 +27,7 @@ class ViewController extends Component {
 
                 <div className="hero-overlay-home" style={{minHeight:"min-height: 100vh;"}}>
                     <video className="video-overlay" autoPlay loop muted>
-                        <source src="https://www.youtube.com/watch?v=lARaX6d8tvw"/>
+                        <source src={Forest}/>
                     </video>
                     <div className="hero-overlay"></div>
                 </div>
@@ -35,26 +36,25 @@ class ViewController extends Component {
                     <div className="intro-area">
                         <section className="intro-text-section">
                             <div className="intro-text">
-                                <h2>Hello, I'm <span className="highlight">Ricardo.</span></h2>
-                                <h2>I'm a <span className="highlight">Computer Engineer student</span> who values </h2>
-                                <h2>I'm a <span className="highlight">Computer Engineer student</span> who values </h2>
-                                <h4>Currently planning <span className="highlight">graduation</span> in <span className="highlight">2021</span></h4>
+                                <h3>Hello, I'm <span className="highlight">Ricardo.</span></h3>
+                                <h3>I'm a <span className="highlight">Computer Engineer student</span> </h3>
+                                <h3></h3>
+                                <p>Currently planning to <span className="highlight">graduate</span> in <span className="highlight">2021</span></p>
                             </div>
                         </section>
                     </div>
                 </div>
 
                 <div className="page" style={{background:"black"}}>
-                    <div className="intro-area">
+                    <div className="project-area">
                         <section className="intro-text">
                             <div>
-                                <h1 className="display-3">PROJECTS</h1>
+                                <h1 className="display-3"><span className="highlight">PROJECTS</span></h1>
                             </div>
                         </section>
                     </div>
-                    <ScrollAnimation animateIn="fadeIn"  style={{paddingBottom:"13em", animationDuration:"2s"}}>
-                        <CardComponent className="card-component"/>
-                    </ScrollAnimation>
+                    <CarouselProjectsComponent/>
+
                 </div>
 
                 <ScrollAnimation animateIn='flipInY' style={{background:"red"}}>

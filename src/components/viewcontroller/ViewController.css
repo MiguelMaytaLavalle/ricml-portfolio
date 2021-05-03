@@ -4,10 +4,10 @@
 Video Overlay
  */
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     font-weight: inherit;
-    line-height: 0em;
-    color:  #d6d1d3;
+    line-height: 1em;
+    color: #b5b0b2;
 }
 
 .hero-overlay-video{
@@ -39,17 +39,16 @@ h1,h2,h3,h4,h5,h6{
     align-items:normal;
     justify-content: normal;
     background-color: #242223;
+    border-radius: 20px;
 }
 
 .intro-area .intro-text-section{
     font-family: 'Bahnschrift SemiBold', sans-serif;
     float: right;
-    border-radius: 10px;
 
 }
 .intro-text{
-    padding: 2em;
-    border-radius: 10px;
+    padding: 35px;
 }
 
 .page{
@@ -61,4 +60,12 @@ h1,h2,h3,h4,h5,h6{
     color: white;
     font-style: unset;
 
+}
+
+.project-area{
+    margin: 5em;
+    text-align: left;
+    display: inline-flex;
+    background-color: #242223;
+    border-radius: 20px;
 }
