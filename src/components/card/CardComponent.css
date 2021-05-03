@@ -29,7 +29,7 @@ div.card{
     background-color: #242223;
 }
 .card:hover{
-    box-shadow: 0 10px 30px 0 rgb(0 0 0/30%), 0 20px 10px 0 rgb(0 0 0/10%);
+    box-shadow: 0px 0px 2px 2px whitesmoke, 0 0 3px 3px blanchedalmond;
     transition: .5s;
 }
 

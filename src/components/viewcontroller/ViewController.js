@@ -26,20 +26,19 @@ class ViewController extends Component {
 
                 <div className="hero-overlay-home" style={{minHeight:"min-height: 100vh;"}}>
                     <video className="video-overlay" autoPlay loop muted>
-                        <source src={Forest}/>
+                        <source src="https://www.youtube.com/watch?v=lARaX6d8tvw"/>
                     </video>
                     <div className="hero-overlay"></div>
                 </div>
 
-
-
-
                 <div className="page">
                     <div className="intro-area">
-                        <section className="intro-text">
-                            <div>
-                                <h1 className="display-3">Hi!</h1>
-
+                        <section className="intro-text-section">
+                            <div className="intro-text">
+                                <h2>Hello, I'm <span className="highlight">Ricardo.</span></h2>
+                                <h2>I'm a <span className="highlight">Computer Engineer student</span> who values </h2>
+                                <h2>I'm a <span className="highlight">Computer Engineer student</span> who values </h2>
+                                <h4>Currently planning <span className="highlight">graduation</span> in <span className="highlight">2021</span></h4>
                             </div>
                         </section>
                     </div>

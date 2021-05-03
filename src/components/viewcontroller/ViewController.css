@@ -4,6 +4,12 @@
 Video Overlay
  */
 
+h1,h2,h3,h4,h5,h6{
+    font-weight: inherit;
+    line-height: 0em;
+    color:  #d6d1d3;
+}
+
 .hero-overlay-video{
 }
 
@@ -27,24 +33,32 @@ Video Overlay
 }
 
 .intro-area{
-    position: center;
-    padding-top: 8%;
-    padding-left: 0%;
+    margin: 20em;
     text-align: left;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    display: inline-flex;
+    align-items:normal;
+    justify-content: normal;
+    background-color: #242223;
 }
 
-.intro-area .intro-text{
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    line-height: 1.0em;
-    margin: auto;
-    padding: 5%;
+.intro-area .intro-text-section{
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    float: right;
+    border-radius: 10px;
+
+}
+.intro-text{
+    padding: 2em;
+    border-radius: 10px;
 }
 
 .page{
     min-height: 100vh;
     z-index: -1;
+}
+
+.highlight{
+    color: white;
+    font-style: unset;
+
 }

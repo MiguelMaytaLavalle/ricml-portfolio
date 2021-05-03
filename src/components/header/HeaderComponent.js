@@ -33,7 +33,7 @@ class HeaderComponent extends Component{
                         <div className="social-area">
                             <ul>
                                 <li><a href="https://github.com/MiguelMaytaLavalle"><i className="fa fa-github fa-3x"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/ricardo-mayta-lavalle-209665182/"><i className="fa fa-linkedin fa-3x"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/ricardo-mayta-lavalle-209665182/"><i id="icon" className="fa fa-linkedin fa-3x"></i></a></li>
                                 <li><a href="/contact"><i className="fa fa-envelope-o fa-3x"></i></a></li>
                             </ul>
                         </div>

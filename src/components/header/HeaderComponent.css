@@ -55,7 +55,6 @@ Social Area
     margin-right: 20px;
 }
 .top-header-area .social-area ul li a{
-    color: white;
     background: transparent;
     width:65px;
     height:65px;
@@ -65,9 +64,11 @@ Social Area
     border-radius: 50%
 }
 .top-header-area .social-area ul li a:hover{
-    color: black;
-    background: white;
+    color: #242223;
 }
+.icon:hover{
+}
+
 
 /*
 Logo Area
