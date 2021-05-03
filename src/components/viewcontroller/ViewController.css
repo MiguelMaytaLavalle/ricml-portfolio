@@ -53,7 +53,6 @@ h1,h2,h3,h4,h5,h6,p{
 
 .page{
     min-height: 100vh;
-    z-index: -1;
 }
 
 .highlight{
@@ -66,6 +65,23 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 5em;
     text-align: left;
     display: inline-flex;
-    background-color: #242223;
     border-radius: 20px;
+    padding: 10px;
+
+}
+
+.project-text{
+    padding:20px;
+
+    border-radius: 20px;
+    display: inline-flex;
+}
+
+.about-text{
+
+}
+
+.link-project{
+    font-weight: bold;
+    color: #c8c3c5;
 }

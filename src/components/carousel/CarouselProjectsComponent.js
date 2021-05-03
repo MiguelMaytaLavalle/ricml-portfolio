@@ -14,7 +14,7 @@ class CarouselProjectsComponent extends Component{
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img className="d-block" src={Sheep} alt="First slide"/>
-                        <div class="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"#242223", opacity:"80%"}}>
                             <h1>Weather Application on Android</h1>
                             <p> I may not be the perfect guy. I may not always remember special dates or the places we went to on our first few dates.
                                 I won’t, for the life of me, remember exactly where we had our first kiss or first held hands. But I will remember this:
@@ -25,7 +25,7 @@ class CarouselProjectsComponent extends Component{
                     </div>
                     <div className="carousel-item">
                         <img className="d-block" src={Sheep} alt="Second slide"/>
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"#242223",opacity:"80%"}}>
                             <h1>Using Internal Sensors on Android and MoveSense</h1>
                             <p> I may not be the perfect guy. I may not always remember special dates or the places we
                                 went to on our first few dates.
@@ -41,18 +41,17 @@ class CarouselProjectsComponent extends Component{
                     </div>
                     <div className="carousel-item">
                         <img className="d-block" src={Sheep} alt="Third slide"/>
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"#242223",opacity:"80%"}}>
                             <h1>SmartScan</h1>
-                            <p> I may not be the perfect guy. I may not always remember special dates or the places we
-                                went to on our first few dates.
-                                I won’t, for the life of me, remember exactly where we had our first kiss or first held
-                                hands. But I will remember this:
-                                I will remember each time you need me. When you need me to pick you up or to take you to
-                                your monthly doctor’s checkup.
-                                I’ll remember when you say you want to watch a movie or try out a new restaurant. I
-                                guess what I want to say is this:
-                                I may not remember much about the past, but what’s always on my mind is my future with
-                                you</p>
+                            <p> A self-scanning tool that will give users recommendations on how to improve their
+                                environmental impact when grocery shopping based on what is in their shopping cart.
+                            </p>
+                            <p>
+                                The project is still in progress.
+                            </p>
+                            <p className="link-project">
+                                Learn More
+                            </p>
                         </div>
                     </div>
                 </div>
