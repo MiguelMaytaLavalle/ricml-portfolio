@@ -7,7 +7,7 @@ Video Overlay
 h1,h2,h3,h4,h5,h6,p{
     font-weight: inherit;
     line-height: 1em;
-    color: #b5b0b2;
+    color: #242223;
 }
 
 .hero-overlay-video{
@@ -45,7 +45,6 @@ h1,h2,h3,h4,h5,h6,p{
 .intro-area .intro-text-section{
     font-family: 'Bahnschrift SemiBold', sans-serif;
     float: right;
-
 }
 .intro-text{
     padding: 35px;
@@ -53,35 +52,88 @@ h1,h2,h3,h4,h5,h6,p{
 
 .page{
     min-height: 100vh;
+    text-align: center;
+    position: center;
 }
 
 .highlight{
     color: white;
     font-style: unset;
-
+    font-weight: bold;
 }
 
 .project-area{
-    margin: 5em;
+    margin: 20em;
     text-align: left;
     display: inline-flex;
     border-radius: 20px;
-    padding: 10px;
 
 }
 
-.project-text{
-    padding:20px;
+.project-text {
+}
 
-    border-radius: 20px;
+.box {
+    font-size: 18px;
+    margin-top:15em;
+    line-height: 1em;
+    position: center;
+    vertical-align: top;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 90%;
     display: inline-flex;
 }
 
-.about-text{
+.ib {
+    display: block;
+    text-align: left;
+    padding:6em;
+    letter-spacing: 0.1em;
+}
+.ib img{
+    filter: grayscale(100%);
+}
 
+.about-text{
+    text-align: left;
+    background-color: blue;
+    padding-left: 10em;
+    display: inline-block;
+}
+
+.about-image{
+    text-align: right;
+    background-color: red;
+    float: right;
+    display: inline-block;
 }
 
 .link-project{
     font-weight: bold;
     color: #c8c3c5;
+}
+
+.project-title{
+    background-color: red;
+    float: left;
+    text-align: left;
+}
+.project-description{
+}
+
+.project-image{
+    text-align: right;
+    float: right;
+    position: relative;
+}
+
+.about-me{
+    margin:2em;
+    background-color: blue;
+    width: 100%;
+}
+
+.about-me-text{
+
 }
