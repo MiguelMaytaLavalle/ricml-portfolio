@@ -54,13 +54,21 @@ class ViewController extends Component {
                         <div className="ib">
                             <h1>ABOUT ME</h1>
                             <ScrollAnimation animateIn="bounceInLeft">
-                                <p>My name is <span className="highlight"> Ricardo Mayta Lavalle</span> and I'm a <span className="highlight"> Computer Engineer Student </span>at
-                                    <br/>Royal Institute of Technology in Stockholm.
-                                    <br/>Currently I'm planning to <span className="highlight"> graduate</span> in <span className="highlight">2021</span>.
+                                <p>
+                                    My name is <span className="highlight"> Ricardo Mayta Lavalle</span> and I'm a <span className="highlight"> Computer Engineer Student </span>at
+                                    <br/>Royal Institute of Technology in Stockholm. I have experience with
+                                    <br/> software development and agile project methodologies.
                                 </p>
-                                <h4>Tools & Technology</h4>
-                                <p>Languages: Python, Java, C, Node.JS</p>
-                                <p>React, </p>
+                                <p>
+                                    I'm currently planning to <span className="highlight"> graduate</span> in <span className="highlight"> 2021</span>.
+                                </p>
+
+                                <h4>Languages</h4>
+                                <p>Java, Python, C, SQL, HTML, CSS</p>
+                                <h4>Library & Frameworks</h4>
+                                <p>Spring Boot, React, Bootstrap, Node.js, Volley</p>
+                                <h4>Tools & Platform</h4>
+                                <p>Git, Docker, Jenkins, IntelliJ, Postman, Android Studio</p>
 
                             </ScrollAnimation>
                         </div>

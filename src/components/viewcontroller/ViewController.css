@@ -33,10 +33,12 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .intro-area{
-    margin: 20em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: left;
     display: inline-flex;
-    align-items:normal;
     justify-content: normal;
     background-color: #242223;
     border-radius: 20px;
@@ -54,6 +56,9 @@ h1,h2,h3,h4,h5,h6,p{
     min-height: 100vh;
     text-align: center;
     position: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .highlight{
@@ -81,7 +86,7 @@ h1,h2,h3,h4,h5,h6,p{
     vertical-align: top;
     padding: 1em;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     display: inline-flex;
 }
 
