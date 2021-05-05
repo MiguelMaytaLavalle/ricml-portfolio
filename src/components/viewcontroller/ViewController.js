@@ -10,6 +10,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import CarouselProjectsComponent from "../carousel/CarouselProjectsComponent";
 import Sheep from '../image/sheep.jpg'
 import Cursed from '../image/Cursed.jpg'
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
 const fadeInDownAnimation = keyframes`${fadeInDown}`;
@@ -24,136 +25,150 @@ const FadeInDownDiv = styled.div`
 class ViewController extends Component {
     render() {
         return (
-            <div className="App">
-                <HeaderComponent/>
+                <div className="App">
+                    <HeaderComponent/>
 
 
-                <div className="hero-overlay-home" style={{minHeight: "min-height: 100vh;"}}>
-                    <video className="video-overlay" autoPlay loop muted>
-                        <source src={Forest}/>
-                    </video>
-                    <div className="hero-overlay"></div>
-                </div>
-
-                <div className="page">
-                    <div className="intro-area">
-                        <section className="intro-text-section">
-                            <div className="intro-text">
-                                <h3>Hello, I'm <span className="highlight">Ricardo.</span></h3>
-                                <h3>I'm a <span className="highlight">Computer Engineer student</span></h3>
-                                <h3></h3>
-                                <p>Currently planning to <span className="highlight">graduate</span> in <span
-                                    className="highlight">2021</span></p>
-                            </div>
-                        </section>
+                    <div className="hero-overlay-home" style={{minHeight: "min-height: 100vh;"}}>
+                        <video className="video-overlay" autoPlay loop muted>
+                            <source src={Forest}/>
+                        </video>
+                        <div className="hero-overlay"></div>
                     </div>
-                </div>
 
-                <div className="page" style={{background: "black"}}>
-                    <div className="box">
-                        <div className="ib">
-                            <h1>ABOUT ME</h1>
-                            <ScrollAnimation animateIn="bounceInLeft">
-                                <p>
-                                    My name is <span className="highlight"> Ricardo Mayta Lavalle</span> and I'm a <span className="highlight"> Computer Engineer Student </span>at
-                                    <br/>Royal Institute of Technology in Stockholm. I have experience with
-                                    <br/> software development and agile project methodologies.
-                                </p>
-                                <p>
-                                    I'm currently planning to <span className="highlight"> graduate</span> in <span className="highlight"> 2021</span>.
-                                </p>
-
-                                <h4>Languages</h4>
-                                <p>Java, Python, C, SQL, HTML, CSS</p>
-                                <h4>Library & Frameworks</h4>
-                                <p>Spring Boot, React, Bootstrap, Node.js, Volley</p>
-                                <h4>Tools & Platform</h4>
-                                <p>Git, Docker, Jenkins, IntelliJ, Postman, Android Studio</p>
-
-                            </ScrollAnimation>
+                    <div className="page">
+                        <div className="intro-area">
+                            <section className="intro-text-section">
+                                <div className="intro-text">
+                                    <h3>Hello, I'm <span className="highlight">Ricardo.</span></h3>
+                                    <h3>I'm a <span className="highlight">Computer Engineer student</span></h3>
+                                    <h3></h3>
+                                    <p>Currently planning to <span className="highlight">graduate</span> in <span
+                                        className="highlight">2021</span></p>
+                                </div>
+                            </section>
                         </div>
-                        <div className="ib">
-                            <div className="container">
+                    </div>
+
+                    <div className="page" style={{background: "black"}}>
+                        <div className="box">
+                            <div className="ib">
+                                <h1>ABOUT ME</h1>
+                                <ScrollAnimation animateIn="fadeIn">
+                                    <p>
+                                        My name is <span className="highlight"> Ricardo Mayta Lavalle</span> and I'm
+                                        a <span className="highlight"> Computer Engineer Student </span>at
+                                        <br/>Royal Institute of Technology in Stockholm. I have experience with
+                                        <br/> software development and agile project methodologies.
+                                    </p>
+                                    <p>
+                                        I'm currently planning to <span className="highlight"> graduate</span> in <span
+                                        className="highlight"> 2021</span>.
+                                    </p>
+
+                                    <h4>Languages</h4>
+                                    <p>Java, Python, C, SQL, HTML, CSS</p>
+                                    <h4>Library & Frameworks</h4>
+                                    <p>Spring Boot, React, Bootstrap, Node.js, Volley</p>
+                                    <h4>Tools & Platform</h4>
+                                    <p>Git, Docker, Jenkins, IntelliJ, Postman, Android Studio</p>
+
+                                </ScrollAnimation>
+                            </div>
+                            <div className="ib">
+                                <div className='container'>
                                     <img src={Cursed} alt="selfie 2021"/>
-                            </div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="page" style={{background: "black"}}>
-                    <div className="box">
-                        <div className="ib">
-                            <h1>ABOUT ME</h1>
-                            <p>My name is Ricardo Mayta Lavalle and I'm a Computer Engineer Student at Royal Institute of Technology.
-                                Currently I'm planning to graduate in 2021.
-                            </p>
-                        </div>
-                        <div className="ib">
-                            <div className="container">
-                                <img src={Sheep} alt="selfie 2021"/>
-                            </div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="page" style={{background: "black"}}>
-
-                    <ScrollAnimation animateIn="fadeIn">
-                        <div className="about-area">
-                            <section className="about">
-                                <h1 className="display-4">ABOUT</h1>
-                            </section>
-                            <div className="rowC">
-                                <div className="ib">
-                                    <h1>Hello!</h1>
-                                    <p>My name is <span className="highlight">Ricardo Mayta Lavalle</span> </p>
-                                    <p>I'm a Computer Engineer Student at Royal Institute of Technology in Stockholm, Sweden.</p>
-                                    <p>Currently I'm planning to graduate in 2021.</p>
-                                </div>
-                                <div className="about-image">
-                                    <h1>Image</h1>
-
                                 </div>
                             </div>
                         </div>
-                    </ScrollAnimation>
+                    </div>
 
-                </div>
+                    <div className="page" style={{background: "black"}}>
+                        <div className="box">
+                            <div className="ib">
+                                <h1>ScanSmart</h1>
+                                <ScrollAnimation animateIn="fadeIn">
+                                    <p>
+                                        A Self-scanning tool that gives a user recommendations on how to improve
+                                        <br/>their enviromental impact when grocery shopping based on their shopping
+                                        cart.
+                                    </p>
+                                    <h4>Technology</h4>
+                                    <p>Java, MySQL, Spring Boot and Volley</p>
 
-
-
-                <div className="page" style={{background: "black"}}>
-
-                    <ScrollAnimation animateIn="fadeIn">
-                        <div className="project-area">
-                            <section className="project-text">
-                                <h1 className="display-4"><span className="highlight">PROJECTS</span></h1>
-                            </section>
-                        </div>
-                    </ScrollAnimation>
-                </div>
-
-                <div className="page" style={{background: "black"}}>
-                    <div className="rowC">
-                        <div className="project-title">
-                            <h1>
-                                ScanSmart
-                            </h1>
-                            <p>A self-scanning tool that will give users recommendations on how to improve their
-                                environmental impact when grocery shopping based on what is in their shopping cart.</p>
-                        </div>
-                        <div className="project-image">
-                            <h1>
-                                Image
-                            </h1>
+                                </ScrollAnimation>
+                            </div>
+                            <div className="ib">
+                                <Parallax className='custom-class' y={[-40,70]}>
+                                    <img src={Cursed} alt="selfie 2021"/>
+                                </Parallax>
+                                <p></p>
+                            </div>
                         </div>
                     </div>
+
+                    <div className="page" style={{background: "black"}}>
+                        <div className="box">
+                            <div className="ib">
+                                <h1>Internet forum</h1>
+                                <ScrollAnimation animateIn="fadeIn">
+                                    <p>
+                                        A community webforum based on Facebook, Twitter. Users can post on their
+                                        <br/>timeline or upload a diagram, and send private messages to other users.
+                                        <br/>Users can create a room to draw on a whiteboard with other users.
+                                        <br/>The web application was built with microservices.
+                                    </p>
+                                    <h4>Technology</h4>
+                                    <p>React, Bootstrap, Spring Boot, Node.js, Vert.x</p>
+
+                                </ScrollAnimation>
+                            </div>
+                            <div className="ib">
+                                <Parallax className='custom-class' y={[-40,70]}>
+                                    <img src={Cursed} alt="selfie 2021"/>
+                                </Parallax>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="page" style={{background: "black"}}>
+                        <div className="box">
+                            <div className="ib">
+                                <h1>Weather Application</h1>
+                                <ScrollAnimation animateIn="fadeIn">
+                                    <p>
+                                        Uses API calls to the Swedish Meteorological and Hydrological Institute
+                                        <br/>,SMHI, to present the weather forecast for a ten day period
+                                    </p>
+                                    <h4>Technology</h4>
+                                    <p>Java, Volley</p>
+
+                                </ScrollAnimation>
+                            </div>
+                            <div className="ib">
+                                <Parallax className='custom-class' y={[-40,70]}>
+                                    <img src={Cursed} alt="selfie 2021"/>
+                                </Parallax>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="page" style={{background: "black"}}>
+                        <div className="box">
+                            <div className="ib">
+                                <h1>LINKS</h1>
+                                <ScrollAnimation animateIn="fadeIn">
+                                    <p>
+                                        
+                                    </p>
+                                </ScrollAnimation>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
-
-            </div>
         );
     }
 }

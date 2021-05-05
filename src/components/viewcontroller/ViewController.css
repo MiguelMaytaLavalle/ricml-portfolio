@@ -78,26 +78,29 @@ h1,h2,h3,h4,h5,h6,p{
 .project-text {
 }
 
+.custom-class {
+
+}
+
 .box {
     font-size: 18px;
     margin-top:15em;
     line-height: 1em;
-    position: center;
-    vertical-align: top;
+    position: relative;
     padding: 1em;
     box-sizing: border-box;
-    width: 100%;
+    width: auto;
     display: inline-flex;
 }
 
 .ib {
     display: block;
     text-align: left;
+    position: relative;
     padding:6em;
     letter-spacing: 0.1em;
 }
 .ib img{
-    filter: grayscale(100%);
 }
 
 .about-text{
