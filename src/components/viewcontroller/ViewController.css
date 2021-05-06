@@ -78,10 +78,6 @@ h1,h2,h3,h4,h5,h6,p{
 .project-text {
 }
 
-.custom-class {
-
-}
-
 .box {
     font-size: 18px;
     margin-top:15em;
@@ -94,13 +90,27 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .ib {
-    display: block;
-    text-align: left;
-    position: relative;
-    padding:6em;
+    display: inline-block;
     letter-spacing: 0.1em;
 }
-.ib img{
+
+.ib h1,h2,h3,h4,p{
+    text-align: left;
+}
+
+.android-screenshot{
+    height: auto;
+    float: right;
+    margin: 3em;
+    max-width: 250px;
+}
+
+.community-image{
+    height: auto;
+    float: right;
+    position: relative;
+    margin:3em;
+    max-width: 600px;
 }
 
 .about-text{
@@ -140,8 +150,4 @@ h1,h2,h3,h4,h5,h6,p{
     margin:2em;
     background-color: blue;
     width: 100%;
-}
-
-.about-me-text{
-
 }

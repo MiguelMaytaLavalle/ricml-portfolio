@@ -3,24 +3,13 @@ import HeaderComponent from "../header/HeaderComponent";
 import "./ViewController.css"
 import "animate.css/animate.compat.css";
 import Forest from "../video/forest-background.mp4";
-import styled, {keyframes} from 'styled-components';
-import {fadeInLeft, fadeInDown, fadeIn} from 'react-animations';
-import CardComponent from "../card/CardComponent";
 import ScrollAnimation from 'react-animate-on-scroll'
 import CarouselProjectsComponent from "../carousel/CarouselProjectsComponent";
-import Sheep from '../image/sheep.jpg'
 import Cursed from '../image/Cursed.jpg'
+import SmartScan from '../image/smartscan.png'
+import Community from '../image/Community.png'
 import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
-const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
-const fadeInDownAnimation = keyframes`${fadeInDown}`;
-
-const FadeInLeftDiv = styled.div`
-  animation: 1s ${fadeInLeftAnimation};
-`;
-const FadeInDownDiv = styled.div`
-  animation: 2s ${fadeInDownAnimation};
-`;
 
 class ViewController extends Component {
     render() {
@@ -57,8 +46,8 @@ class ViewController extends Component {
                                 <ScrollAnimation animateIn="fadeIn">
                                     <p>
                                         My name is <span className="highlight"> Ricardo Mayta Lavalle</span> and I'm
-                                        a <span className="highlight"> Computer Engineer Student </span>at
-                                        <br/>Royal Institute of Technology in Stockholm. I have experience with
+                                        a <span className="highlight"> Computer Engineer Student </span>
+                                        <br/>at <span className="highlight">Royal Institute of Technology</span> in Stockholm. I have experience with
                                         <br/> software development and agile project methodologies.
                                     </p>
                                     <p>
@@ -98,17 +87,20 @@ class ViewController extends Component {
 
                                 </ScrollAnimation>
                             </div>
+
+                            <Parallax y={[-40,10]}>
                             <div className="ib">
-                                <Parallax className='custom-class' y={[-40,70]}>
-                                    <img src={Cursed} alt="selfie 2021"/>
-                                </Parallax>
-                                <p></p>
+
+                                    <img className="android-screenshot" src={SmartScan} alt="selfie 2021"/>
+
                             </div>
+                            </Parallax>
                         </div>
                     </div>
 
                     <div className="page" style={{background: "black"}}>
                         <div className="box">
+
                             <div className="ib">
                                 <h1>Internet forum</h1>
                                 <ScrollAnimation animateIn="fadeIn">
@@ -120,15 +112,16 @@ class ViewController extends Component {
                                     </p>
                                     <h4>Technology</h4>
                                     <p>React, Bootstrap, Spring Boot, Node.js, Vert.x</p>
-
                                 </ScrollAnimation>
                             </div>
+                            <Parallax y={[-40,20]}>
                             <div className="ib">
-                                <Parallax className='custom-class' y={[-40,70]}>
-                                    <img src={Cursed} alt="selfie 2021"/>
-                                </Parallax>
-                                <p></p>
+
+                                    <img className="community-image" src={Community} alt="selfie 2021"/>
+
                             </div>
+                            </Parallax>
+
                         </div>
                     </div>
 
@@ -146,12 +139,13 @@ class ViewController extends Component {
 
                                 </ScrollAnimation>
                             </div>
+                            <Parallax className='custom-class' y={[-40,10]}>
                             <div className="ib">
-                                <Parallax className='custom-class' y={[-40,70]}>
-                                    <img src={Cursed} alt="selfie 2021"/>
-                                </Parallax>
-                                <p></p>
+
+                                    <img className="android-screenshot" src={SmartScan} alt="selfie 2021"/>
+
                             </div>
+                            </Parallax>
                         </div>
                     </div>
 
@@ -161,7 +155,7 @@ class ViewController extends Component {
                                 <h1>LINKS</h1>
                                 <ScrollAnimation animateIn="fadeIn">
                                     <p>
-                                        
+
                                     </p>
                                 </ScrollAnimation>
                             </div>

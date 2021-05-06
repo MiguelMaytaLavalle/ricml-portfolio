@@ -60,10 +60,12 @@ Social Area
     height:65px;
     display: block;
     padding-top:9px;
-    border-radius: 50%
+    border-radius: 50%;
+    color:white;
 }
 .top-header-area .social-area ul li a:hover{
-    color: #242223;
+    color: black;
+    background-color: white;
 }
 .icon:hover{
 }
