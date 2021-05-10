@@ -32,10 +32,11 @@ Top Header Area
  */
 
 .top-header-area{
+    position: relative;
 
 }
 .top-header-area .inner-header{
-    overflow: hidden
+    overflow: hidden;
 }
 
 /*
@@ -44,7 +45,7 @@ Social Area
 .top-header-area .social-area{
     float:left;
     width:auto;
-    padding-left: 11%;
+    margin-left: 12em;
 }
 .top-header-area .social-area ul{
     margin:0;
@@ -67,8 +68,7 @@ Social Area
     color: black;
     background-color: white;
 }
-.icon:hover{
-}
+
 
 
 /*
@@ -77,16 +77,12 @@ Logo Area
 .top-header-area .logo-area{
     max-width: 100%;
     display: inline-flex;
+    margin-right: 30em;
 
 }
 
 .top-header-area .logo-area .logo-image{
     height: 70px;
-    text-align: center;
-}
-
-.top-header-area .logo-area .logo-image:hover{
-
 }
 
 /*

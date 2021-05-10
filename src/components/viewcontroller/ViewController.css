@@ -151,3 +151,17 @@ h1,h2,h3,h4,h5,h6,p{
     background-color: blue;
     width: 100%;
 }
+
+.links-area{
+    float:left;
+}
+
+.links-area ul{
+    margin:0;
+    list-style: none;
+}
+
+.links-area ul li{
+    display: inline-block;
+    margin-right: 50px;
+}

@@ -8,6 +8,8 @@ import CarouselProjectsComponent from "../carousel/CarouselProjectsComponent";
 import Cursed from '../image/Cursed.jpg'
 import SmartScan from '../image/smartscan.png'
 import Community from '../image/Community.png'
+import Weather from '../image/weather.png'
+import CV from '../document/CV-English.pdf'
 import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 
@@ -51,6 +53,13 @@ class ViewController extends Component {
                                         <br/> software development and agile project methodologies.
                                     </p>
                                     <p>
+                                        I found interest in programming when studying game design and later on
+                                        <br/>began my engineering journey in 2018.
+                                        <br/>I have an appreciation of building software systems that are flexible and efficient.
+                                        <br/>I want to keep developing my skills as an computer engineer.
+                                    </p>
+
+                                    <p>
                                         I'm currently planning to <span className="highlight"> graduate</span> in <span
                                         className="highlight"> 2021</span>.
                                     </p>
@@ -66,7 +75,7 @@ class ViewController extends Component {
                             </div>
                             <div className="ib">
                                 <div className='container'>
-                                    <img src={Cursed} alt="selfie 2021"/>
+                                    <img src=""/>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +151,7 @@ class ViewController extends Component {
                             <Parallax className='custom-class' y={[-40,10]}>
                             <div className="ib">
 
-                                    <img className="android-screenshot" src={SmartScan} alt="selfie 2021"/>
+                                    <img className="android-screenshot" src={Weather} alt="selfie 2021"/>
 
                             </div>
                             </Parallax>
@@ -152,11 +161,16 @@ class ViewController extends Component {
                     <div className="page" style={{background: "black"}}>
                         <div className="box">
                             <div className="ib">
-                                <h1>LINKS</h1>
+                                <h1 style={{marginLeft:"2.9em", padding:"1em"}}>LINKS</h1>
                                 <ScrollAnimation animateIn="fadeIn">
-                                    <p>
-
-                                    </p>
+                                    <div className="links-area">
+                                        <ul>
+                                            <li><a href="https://github.com/MiguelMaytaLavalle"><i className="fa fa-github fa-3x"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/ricardo-mayta-lavalle-209665182/"><i id="icon" className="fa fa-linkedin fa-3x"></i></a></li>
+                                            <li><a href="mailto:ric.maytalavalle@gmail.com"><i className="fa fa-envelope-o fa-3x"></i></a></li>
+                                            <li><a href={CV} target="_blank" rel="noreferrer"><i className="fa fa-file-pdf-o fa-3x"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </ScrollAnimation>
                             </div>
                         </div>
