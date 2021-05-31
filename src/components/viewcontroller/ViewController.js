@@ -36,6 +36,7 @@ class ViewController extends Component {
                                     <h3></h3>
                                     <p>Currently planning to <span className="highlight">graduate</span> in <span
                                         className="highlight">2021</span></p>
+                                    <p><a href={CV}>Resumé</a></p>
                                 </div>
                             </section>
                         </div>
